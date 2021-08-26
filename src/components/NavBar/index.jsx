@@ -15,7 +15,7 @@ const NavBar = ({ showNav }) => {
   }
 
   return (
-    <TabBar visible={showNav} className={s.tab} activeKey={activeKey} onChange={changeTab}>
+    <TabBar visible={showNav} activeKey={activeKey} onChange={changeTab}>
       <TabBar.Item
         itemKey="/"
         title="账单"
