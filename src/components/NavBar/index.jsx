@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { TabBar } from 'zarm';
 import { useHistory, useLocation } from 'react-router-dom';
 import s from './style.module.less';
-import CustomIcon from '../CustomIcon';
+import customIcon from '../CustomIcon';
 
 const NavBar = ({ showNav }) => {
   const [activeKey, setActiveKey] = useState(useLocation().pathname)
@@ -19,17 +19,17 @@ const NavBar = ({ showNav }) => {
       <TabBar.Item
         itemKey="/"
         title="账单"
-        icon={<CustomIcon type="zhangdan" />}
+        icon={<customIcon type="zhangdan" />}
       />
       <TabBar.Item
         itemKey="/data"
         title="统计"
-        icon={<CustomIcon type="tongji" />}
+        icon={<customIcon type="tongji" />}
       />
       <TabBar.Item
         itemKey="/user"
         title="我的"
-        icon={<CustomIcon type="wode" />}
+        icon={<customIcon type="wode" />}
       />
     </TabBar>
   );
