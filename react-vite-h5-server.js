@@ -1,6 +1,6 @@
-const server = require('pushstate-server')
+import { start } from 'pushstate-server'
 
-server.start({
+start({
   port: 5021,
   directory: './dist'
 })
