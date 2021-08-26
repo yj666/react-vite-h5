@@ -19,8 +19,8 @@ function App() {
   useEffect(() => {
     setShowNav(needNav.includes(pathname))
   }, [pathname]) // [] 内的参数若是变化，便会执行上述回调函数=
-  return <>
-    <ConfigProvider primaryColor={'#007fff'}>
+  return <ConfigProvider primaryColor={'#007fff'}>
+    <>
       <Switch>
         {
           routes.map(route => <Route exact key={route.path} path={route.path}>
@@ -28,9 +28,9 @@ function App() {
           </Route>)
         }
       </Switch>
-    </ConfigProvider>
-    <NavBar showNav={showNav} />
-  </>
+      <NavBar showNav={showNav} />
+    </>
+  </ConfigProvider>;
 }
 
 export default App
