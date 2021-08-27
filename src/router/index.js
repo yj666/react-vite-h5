@@ -7,7 +7,7 @@ import Login from '@/container/Login'
 
 const routes = [
   {
-    path: "/my-cost",
+    path: "/",
     component: Home
   },
   {
