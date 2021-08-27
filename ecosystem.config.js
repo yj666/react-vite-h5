@@ -8,7 +8,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'root',
-      host: '106.75.87.103',
+      host: 'www.uneedcoffee.com',
       ref: 'origin/master',
       repo: 'https://github.com/yj666/react-vite-h5.git',
       path: '/home/react-vite-h5',
