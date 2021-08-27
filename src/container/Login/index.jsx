@@ -2,12 +2,10 @@ import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { Cell, Input, Button, Checkbox, Toast } from 'zarm';
 import cx from 'classnames';
 import Captcha from "react-captcha-code";
-// import CustomIcon from '@/components/CustomIcon';
+import CustomIcon from '@/components/CustomIcon';
 import { post } from '@/utils'
 
 import s from './style.module.less';
-import { Icon } from 'zarm';
-const CustomIcon = Icon.createFromIconfont('//at.alicdn.com/t/font_2236655_w1mpqp7n1ni.js');
 const Login = () => {
   const captchaRef = useRef();
   const [type, setType] = useState('login'); // 登录注册类型

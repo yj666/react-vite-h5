@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { TabBar } from 'zarm';
 import { useHistory, useLocation } from 'react-router-dom';
 import s from './style.module.less';
-// import customIcon from '../CustomIcon';
-import { Icon } from 'zarm';
-const CustomIcon = Icon.createFromIconfont('//at.alicdn.com/t/font_2236655_w1mpqp7n1ni.js');
+import CustomIcon from '../CustomIcon';
 
 const NavBar = ({ showNav }) => {
   const [activeKey, setActiveKey] = useState(useLocation().pathname)
