@@ -14,7 +14,7 @@ import routes from '@/router'
 function App() {
   const location = useLocation()
   const { pathname } = location // 获取当前路径
-  const needNav = ['/', '/data', '/user'] // 需要底部导航栏的路径
+  const needNav = ['/my-cost', '/my-cost/data', '/my-cost/user'] // 需要底部导航栏的路径
   const [showNav, setShowNav] = useState(false) // 是否展示 Nav
   useEffect(() => {
     setShowNav(needNav.includes(pathname))

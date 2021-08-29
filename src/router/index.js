@@ -7,19 +7,19 @@ import Login from '@/container/Login'
 
 const routes = [
   {
-    path: "/",
+    path: "/my-cost",
     component: Home
   },
   {
-    path: "/data",
+    path: "/my-cost/data",
     component: Data
   },
   {
-    path: "/user",
+    path: "/my-cost/user",
     component: User
   },
   {
-    path: "/login",
+    path: "/my-cost/login",
     component: Login
   },
 ];

@@ -17,17 +17,17 @@ const NavBar = ({ showNav }) => {
   return (
     <TabBar visible={showNav} className={s.tab} activeKey={activeKey} onChange={changeTab}>
       <TabBar.Item
-        itemKey="/"
+        itemKey="/my-cost"
         title="账单"
         icon={<CustomIcon type="zhangdan" />}
       />
       <TabBar.Item
-        itemKey="/data"
+        itemKey="/my-cost/data"
         title="统计"
         icon={<CustomIcon type="tongji" />}
       />
       <TabBar.Item
-        itemKey="/user"
+        itemKey="/my-cost/user"
         title="我的"
         icon={<CustomIcon type="wode" />}
       />
