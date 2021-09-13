@@ -14,7 +14,7 @@ module.exports = {
       path: '/home/react-vite-h5',
       'post-deploy': 'git reset --hard && git checkout master && git pull && npm i --production=false && npm run build && pm2 startOrReload ecosystem.config.js', // -production=false 下载全量包
       env: {
-        NODE_ENV: 'production'
+        NODE_ENV: 'production' 
       }
     }
   }
